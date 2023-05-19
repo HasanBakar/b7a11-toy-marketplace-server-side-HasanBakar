@@ -1,0 +1,234 @@
+[
+        {
+            "ToyName": "Ford F-150",
+            "picture": "https://example.com/toys/teddy_bear.jpg",
+            "Price": 19.99,
+            "Ratings": 4.5,
+            "SellerName": "Toy World",
+            "SellerEmail": "toyworld@example.com",
+            "CategoryType": "Car",
+            "AvailableQuantity": 10,
+            "DetailDescription": "A cuddly teddy bear suitable for all ages."
+        },
+        {
+            "ToyName": "Hyundai Elantra",
+            "picture": "https://example.com/toys/building_blocks.jpg",
+            "Price": 29.99,
+            "Ratings": 4.2,
+            "SellerName": "Fun Toys",
+            "SellerEmail": "funtoys@example.com",
+            "CategoryType": "Car",
+            "AvailableQuantity": 5,
+            "DetailDescription": "Colorful building blocks for creative play and learning."
+        },
+        {
+            "ToyName": "Ferrari 488 GTB",
+            "picture": "https://example.com/toys/dollhouse.jpg",
+            "Price": 49.99,
+            "Ratings": 4.8,
+            "SellerName": "Playtime Emporium",
+            "SellerEmail": "playtime@example.com",
+            "CategoryType": "Car",
+            "AvailableQuantity": 3,
+            "DetailDescription": "A beautiful dollhouse with furniture and accessories included."
+        },
+        {
+            "ToyName": "Toyota Corolla",
+            "picture": "https://example.com/toys/rc_car.jpg",
+            "Price": 39.99,
+            "Ratings": 4.6,
+            "SellerName": "RC Fun",
+            "SellerEmail": "rcfun@example.com",
+            "CategoryType": "Car",
+            "AvailableQuantity": 8,
+            "DetailDescription": "A high-speed remote control car for racing enthusiasts."
+        },
+        {
+            "ToyName": "Ford Mustang",
+            "picture": "https://example.com/toys/puzzle_set.jpg",
+            "Price": 14.99,
+            "Ratings": 4.1,
+            "SellerName": "Brain Teasers",
+            "SellerEmail": "brainteasers@example.com",
+            "CategoryType": "Car",
+            "AvailableQuantity": 12,
+            "DetailDescription": "A collection of challenging puzzles to keep you entertained."
+        },
+        {
+            "ToyName": "Honda Ridgeline",
+            "picture": "https://example.com/toys/art_set.jpg",
+            "Price": 24.99,
+            "Ratings": 4.4,
+            "SellerName": "Creative Expressions",
+            "SellerEmail": "creative@example.com",
+            "CategoryType": "Truck",
+            "AvailableQuantity": 6,
+            "DetailDescription": "An art set with paints, brushes, and other art supplies."
+        },
+        {
+            "ToyName": "Chevrolet Silverado",
+            "picture": "https://example.com/toys/board_game.jpg",
+            "Price": 32.99,
+            "Ratings": 4.7,
+            "SellerName": "Family Fun Games",
+            "SellerEmail": "familyfun@example.com",
+            "CategoryType": "Truck",
+            "AvailableQuantity": 4,
+            "DetailDescription": "A fun-filled board game for the whole family to enjoy."
+        },
+        {
+                "ToyName": "Nissan Frontier",
+                "picture": "https://example.com/toys/action_figure.jpg",
+                "Price": 17.99,
+                "Ratings": 4.3,
+                "SellerName": "Toy Heroes",
+                "SellerEmail": "toyheroes@example.com",
+                "CategoryType": "Truck",
+                "AvailableQuantity": 9,
+                "DetailDescription": "Poseable action figures of your favorite characters."
+            },
+            {
+                "ToyName": "Toyota Tundra",
+                "picture": "https://example.com/toys/musical_instruments.jpg",
+                "Price": 39.99,
+                "Ratings": 4.6,
+                "SellerName": "Melody Masters",
+                "SellerEmail": "melodymasters@example.com",
+                "CategoryType": "Truck",
+                "AvailableQuantity": 7,
+                "DetailDescription": "A set of musical instruments for budding musicians."
+            },
+            {
+                "ToyName": "Jeep Wrangler Pickup",
+                "picture": "https://example.com/toys/play_kitchen.jpg",
+                "Price": 59.99,
+                "Ratings": 4.9,
+                "SellerName": "Little Chefs",
+                "SellerEmail": "littlechefs@example.com",
+                "CategoryType": "Truck",
+                "AvailableQuantity": 2,
+                "DetailDescription": "A play kitchen set for imaginative cooking adventures."
+            },
+            {
+                "ToyName": "Neoplan Tourliner",
+                "picture": "https://example.com/toys/sports_balls.jpg",
+                "Price": 19.99,
+                "Ratings": 4.4,
+                "SellerName": "Sports World",
+                "SellerEmail": "sportsworld@example.com",
+                "CategoryType": "Bus",
+                "AvailableQuantity": 11,
+                "DetailDescription": "A set of sports balls for outdoor play and exercise."
+            },
+            {
+                "ToyName": "Volkswagen Transporter",
+                "picture": "https://example.com/toys/science_kit.jpg",
+                "Price": 27.99,
+                "Ratings": 4.7,
+                "SellerName": "Curious Minds",
+                "SellerEmail": "curiousminds@example.com",
+                "CategoryType": "Bus",
+                "AvailableQuantity": 5,
+                "DetailDescription": "A science kit with experiments and educational fun."
+            },
+            {
+                "ToyName": "Iveco Daily",
+                "picture": "https://example.com/toys/robot_toy.jpg",
+                "Price": 49.99,
+                "Ratings": 4.8,
+                "SellerName": "Tech Wizards",
+                "SellerEmail": "techwizards@example.com",
+                "CategoryType": "Bus",
+                "AvailableQuantity": 3,
+                "DetailDescription": "An interactive robot toy with exciting features."
+            },
+            {
+                "ToyName": "Scania Touring",
+                "picture": "https://example.com/toys/play_kitchen.jpg",
+                "Price": 59.99,
+                "Ratings": 4.9,
+                "SellerName": "Little Chefs",
+                "SellerEmail": "littlechefs@example.com",
+                "CategoryType": "Bus",
+                "AvailableQuantity": 2,
+                "DetailDescription": "A play kitchen set for imaginative cooking adventures."
+            },
+            {
+                "ToyName": "Alexander Dennis Enviro500",
+                "picture": "https://example.com/toys/sports_balls.jpg",
+                "Price": 19.99,
+                "Ratings": 4.4,
+                "SellerName": "Sports World",
+                "SellerEmail": "sportsworld@example.com",
+                "CategoryType": "Bus",
+                "AvailableQuantity": 11,
+                "DetailDescription": "A set of sports balls for outdoor play and exercise."
+            },
+            {
+                "ToyName": "Jeep Cherokee Police",
+                "picture": "https://example.com/toys/science_kit.jpg",
+                "Price": 27.99,
+                "Ratings": 4.7,
+                "SellerName": "Curious Minds",
+                "SellerEmail": "curiousminds@example.com",
+                "CategoryType": "Police Car",
+                "AvailableQuantity": 5,
+                "DetailDescription": "A science kit with experiments and educational fun."
+            },
+            {
+                "ToyName": "Toyota Camry Police",
+                "picture": "https://example.com/toys/robot_toy.jpg",
+                "Price": 49.99,
+                "Ratings": 4.8,
+                "SellerName": "Tech Wizards",
+                "SellerEmail": "techwizards@example.com",
+                "CategoryType": "Police Car",
+                "AvailableQuantity": 3,
+                "DetailDescription": "An interactive robot toy with exciting features."
+            },
+            {
+                "ToyName": "BMW 5 Series Police",
+                "picture": "https://example.com/toys/play_kitchen.jpg",
+                "Price": 59.99,
+                "Ratings": 4.9,
+                "SellerName": "Little Chefs",
+                "SellerEmail": "littlechefs@example.com",
+                "CategoryType": "Police Car",
+                "AvailableQuantity": 2,
+                "DetailDescription": "A play kitchen set for imaginative cooking adventures."
+            },
+            {
+                "ToyName": "RAM 1500 Police",
+                "picture": "https://example.com/toys/sports_balls.jpg",
+                "Price": 19.99,
+                "Ratings": 4.4,
+                "SellerName": "Sports World",
+                "SellerEmail": "sportsworld@example.com",
+                "CategoryType": "Police Car",
+                "AvailableQuantity": 11,
+                "DetailDescription": "A set of sports balls for outdoor play and exercise."
+            },
+            {
+                "ToyName": "Nissan Altima Police",
+                "picture": "https://example.com/toys/science_kit.jpg",
+                "Price": 27.99,
+                "Ratings": 4.7,
+                "SellerName": "Curious Minds",
+                "SellerEmail": "curiousminds@example.com",
+                "CategoryType": "Police Car",
+                "AvailableQuantity": 5,
+                "DetailDescription": "A science kit with experiments and educational fun."
+            },
+            {
+                "ToyName": "Chevrolet Impala Police",
+                "picture": "https://example.com/toys/robot_toy.jpg",
+                "Price": 49.99,
+                "Ratings": 4.8,
+                "SellerName": "Tech Wizards",
+                "SellerEmail": "techwizards@example.com",
+                "CategoryType": "Police Car",
+                "AvailableQuantity": 3,
+                "DetailDescription": "An interactive robot toy with exciting features."
+            }
+        ]
+    
