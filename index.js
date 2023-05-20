@@ -10,7 +10,7 @@ app.use(express.json());
 
 
 app.get('/', (req, res) =>{
-    res.send(data);
+    res.send("Toy Marketplace server is ready for providing data");
 });
 
 app.listen(port, () => {
