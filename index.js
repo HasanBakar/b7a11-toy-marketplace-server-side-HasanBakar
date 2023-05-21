@@ -39,10 +39,10 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
-    client.connect();
+    // client.connect();
     const toyCollection = client.db('toysDB').collection('toy');
     // Send a ping to confirm a successful connection
-    await client.db("admin").command({ ping: 1 });
+    // await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
 
     app.get("/allToys", async(req, res)=>{
@@ -50,9 +50,9 @@ async function run() {
 
               const options = {
       // sort returned documents in ascending order by title (A->Z)
-      sort: { title: 1 },
+      sort: { name: 1 },
       // Include only the `title` and `imdb` fields in each returned document
-      projection: { AvailableQuantity: 1,Ratings: 1, Price: 1, ToyName: 1,picture:1, _id: 1 },
+      projection: { quantity: 1,rating: 1, price: 1, name: 1,picture:1, _id: 1 },
     };
       const cursor = await toyCollection.find(query, options).limit(20)
       const result = await cursor.toArray()
@@ -64,6 +64,22 @@ async function run() {
       const query = {_id: new ObjectId(id)};
       const singleItem = await toyCollection.findOne(query);
       res.send(singleItem)
+    })
+
+    app.get("/:type", async(req, res)=>{
+      const toyType = req.params.type;
+      const query = {subCategoryType: `${toyType}`}
+
+      const options = {
+      
+      sort: { name: 1 },
+      
+      projection: { quantity: 1,rating: 1, price: 1, name: 1,picture:1, _id: 1 },
+    };
+
+      const sameType = await toyCollection.find(query,options).limit(3)
+      const items = await sameType.toArray()
+      res.send(items)
     })
     
 
