@@ -52,7 +52,7 @@ async function run() {
       // sort returned documents in ascending order by title (A->Z)
       sort: { name: 1 },
       // Include only the `title` and `imdb` fields in each returned document
-      projection: { quantity: 1,rating: 1, price: 1, name: 1,picture:1, _id: 1 },
+      projection: { quantity: 1, subCategoryType: 1, price: 1, name: 1, sellerName:1, _id: 1 },
     };
       const cursor = await toyCollection.find(query, options).limit(20)
       const result = await cursor.toArray()
