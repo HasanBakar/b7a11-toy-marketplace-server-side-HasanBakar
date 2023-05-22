@@ -76,26 +76,17 @@ async function run() {
 
       const searchText = req.params.text;
 
-      const result = await toyCollection.find({ name: { $regex: searchText, $options: 'i' } }).toArray()
+      const result = await toyCollection.find({ name: { $regex: searchText, $options: "i" } }).toArray()
       res.send(result)
     })
 
 
+    const myToys = await toyCollection.createIndex({sellerName: 1});
 
     app.get("/myToys/:specificSeller", async(req, res)=>{
       const specificSeller = req.params.specificSeller;
-      const query = {sellerName: `${specificSeller}` };
-      const options = {
-        projection: {
-          quantity: 1, price: 1, description: 1, _id: 1
-        }
-      } 
-
-      const result = await toyCollection.find(query,options)
-      const items = result.toArray()
-      res.send(items)
-
-
+      const result = await toyCollection.find({sellerName: {$regex: specificSeller, $options:"i"} }).toArray()
+      res.send(result)
     })
 
     app.get("/:type", async(req, res)=>{
