@@ -66,6 +66,38 @@ async function run() {
       res.send(singleItem)
     })
 
+
+
+
+    
+    const result = await toyCollection.createIndex({name:1});
+
+    app.get("/allToy/search/:text", async(req, res) =>{
+
+      const searchText = req.params.text;
+
+      const result = await toyCollection.find({ name: { $regex: searchText, $options: 'i' } }).toArray()
+      res.send(result)
+    })
+
+
+
+    app.get("/myToys/:specificSeller", async(req, res)=>{
+      const specificSeller = req.params.specificSeller;
+      const query = {sellerName: `${specificSeller}` };
+      const options = {
+        projection: {
+          quantity: 1, price: 1, description: 1, _id: 1
+        }
+      } 
+
+      const result = await toyCollection.find(query,options)
+      const items = result.toArray()
+      res.send(items)
+
+
+    })
+
     app.get("/:type", async(req, res)=>{
       const toyType = req.params.type;
       const query = {subCategoryType: `${toyType}`}
@@ -85,7 +117,7 @@ async function run() {
 
     app.post("/addAToy",async(req, res)=>{
       const toyItem = req.body;
-      console.log(toyItem)
+      // console.log(toyItem)
       const item = await toyCollection.insertOne(toyItem);
       res.send(item);
     });
