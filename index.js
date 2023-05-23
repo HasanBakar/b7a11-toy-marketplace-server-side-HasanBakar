@@ -45,19 +45,20 @@ async function run() {
     // await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
 
-    app.get("/allToys", async(req, res)=>{
-          const query = { };
+    app.get("/:type", async(req, res)=>{
+      const toyType = req.params.type;
+      const query = {subCategoryType: toyType}
 
-              const options = {
-      // sort returned documents in ascending order by title (A->Z)
-      sort: { name: 1 },
-      // Include only the `title` and `imdb` fields in each returned document
-      projection: { quantity: 1, subCategoryType: 1, price: 1, name: 1, sellerName:1, _id: 1 },
+      const options = {
+
+      projection: { quantity: 1,rating: 1, price: 1, name: 1,picture:1, _id: 1 },
     };
-      const cursor = await toyCollection.find(query, options).limit(20)
-      const result = await cursor.toArray()
-      res.send(result);
-    })
+
+      const sameType = await toyCollection.find(query,options).limit(3)
+      const items = await sameType.toArray()
+      res.send(items)
+    });
+
 
     app.get("/allToys/:id", async(req, res)=>{
       const id = req.params.id;
@@ -89,22 +90,11 @@ async function run() {
       res.send(result)
     })
 
-    app.get("/:type", async(req, res)=>{
-      const toyType = req.params.type;
-      const query = {subCategoryType: `${toyType}`}
-
-      const options = {
+    app.delete("/myToys/:id", async(req, res)=>{
+      const id = req.params.id;
       
-      sort: { name: 1 },
-      
-      projection: { quantity: 1,rating: 1, price: 1, name: 1,picture:1, _id: 1 },
-    };
-
-      const sameType = await toyCollection.find(query,options).limit(3)
-      const items = await sameType.toArray()
-      res.send(items)
+      console.log(id)
     })
-    
 
     app.post("/addAToy",async(req, res)=>{
       const toyItem = req.body;
